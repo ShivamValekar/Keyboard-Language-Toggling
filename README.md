@@ -8,3 +8,7 @@ Step 3 : Analyze data -	Figure out meaning, intent, and context
 Step 4: Toggle language -	Choose & switch to the right output language
 
 Step 1.1: Trying to understand how Android Input Framework works
+1.2 : Understood 1 out of 3 skeleton needed for understanding the users input, 1st is KeyInputAccessibilityService 
+1.3 : Establishing connection with Github and getting the hang of things
+1.4 : Understanding the 2 out of 3 skeletons, ie 2nd is Declare the Service in the Manifest
+1.5 : Declaring the the Service in the Manifest
