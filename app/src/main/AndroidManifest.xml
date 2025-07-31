@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
+    <!--line 2 and 3 are used to set a namespace (aka: scope for android: and tools:)-->
+    <!-- Inside the "<application" tag, it has called basic attributes(or functions) from the scope defined in "android"
+     - allowBackup,dataExtractionRules,fullBackupContent has rules and allows for backup into g-drive
+     - icon and label are used to add name to the app and define its looks on launch
+     - supportsRtl is used to support languages like arabic which starts from R to L -->
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,6 +15,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LanguageToggler">
+        <!-- service tag is used to define what are all the services needed by the app to run in the background
+         here it's defining,
+         -name is defining what services it seeks
+         -permission is defining Grants special system-level permission. Android itself can bind to this service — securing your app from third-party misuse.
+         -exported Makes the service discoverable by the system.-->
+        <service
+            android:name=".KeyInputAccessibilityService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="true">
+            <!--Declares this component as an AccessibilityService, letting Android categorize and activate it appropriately.
+            -->
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <!--android:name="android.accessibilityservice"- This key tells Android:
+             “I’m linking AccessibilityService metadata.”
+             android:resource - Points to an XML file in res/xml/accessibility_service_config.xml
+            -What events your service listens to (like typeViewTextChanged)
+            Feedback type (spoken, vibration, etc.)
+            Timeouts, filtering flags, and more-->
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+
+        </service>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
