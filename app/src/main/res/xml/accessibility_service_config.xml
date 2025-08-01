@@ -1,3 +1,18 @@
+<!--Android Manifest's services point to this file.
+- First we declare the namespace of the file.
+android:accessibilityEventTypes="typeViewTextChanged" -
+ -Your service will only react to events where text in a view changes,
+ -like when the user types or edits a field.
+ -This keeps your service lean and focused, avoiding noise from other event types.
+android:accessibilityFeedbackType="feedbackGeneric"
+ -Declares what kind of feedback your service provides.
+ - SARTHAK, we might have to configure this file.
+notificationTimeout="100"
+ - Creates lag so that the system doesn't overload
+accessibilityFlags="flagDefault"
+ - Tells Android your service uses default behavior —
+  no special flags like flagIncludeNotImportantViews or flagRequestTouchExplorationMode.-->
+
 <accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
     android:accessibilityEventTypes="typeViewTextChanged"
     android:accessibilityFeedbackType="feedbackGeneric"

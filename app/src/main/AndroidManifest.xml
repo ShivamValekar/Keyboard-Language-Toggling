@@ -29,7 +29,7 @@
             <intent-filter>
                 <action android:name="android.accessibilityservice.AccessibilityService" />
             </intent-filter>
-            <!--android:name="android.accessibilityservice"- This key tells Android:
+            <!--For the tag <metadata> android:name="android.accessibilityservice"- This key tells Android:
              “I’m linking AccessibilityService metadata.”
              android:resource - Points to an XML file in res/xml/accessibility_service_config.xml
             -What events your service listens to (like typeViewTextChanged)
@@ -40,11 +40,18 @@
                 android:resource="@xml/accessibility_service_config" />
 
         </service>
+        <!-- name- Points to the Kotlin class (or Java) that defines your main screen.
+        The . means “use app’s base package” —
+        so this resolves to something like: com.example.language_toggler.MainActivity
+        android:exported="true"
+        - Allows external components (like Android’s launcher system) to access this activity.
+        theme
+        -Applies your custom UI styling defined in styles.xml-->
+
 
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.LanguageToggler">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
