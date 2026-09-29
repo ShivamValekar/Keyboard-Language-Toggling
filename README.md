@@ -170,12 +170,12 @@ Ideas, issues, and pull requests are welcome, especially if you have experience 
 
 ## 📄 License
 
-No license has been added yet. Until one is, all rights are reserved by the author. Consider adding an [open-source license](https://choosealicense.com/) such as MIT to let others use and build on this work.
+No license has been added yet. Until one is, all rights are reserved by the author.
 
 ---
 
 <div align="center">
 
-**Built by [Shivam Valekar](https://github.com/ShivamValekar)** · If this idea interests you, consider giving the repo a ⭐
+**Built by [Shivam Valekar](https://github.com/ShivamValekar) & [Sarthak Kanawadehttps://github.com/Sarthak-145]** · If this idea interests you, consider giving the repo a ⭐
 
 </div>
