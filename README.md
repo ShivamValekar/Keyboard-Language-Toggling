@@ -176,6 +176,6 @@ No license has been added yet. Until one is, all rights are reserved by the auth
 
 <div align="center">
 
-**Built by [Shivam Valekar](https://github.com/ShivamValekar) & [Sarthak Kanawadehttps://github.com/Sarthak-145]** · If this idea interests you, consider giving the repo a ⭐
+**Built by [Shivam Valekar](https://github.com/ShivamValekar) & [Sarthak Kanawade](https://github.com/Sarthak-145)** · If this idea interests you, consider giving the repo a ⭐
 
 </div>
